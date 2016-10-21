@@ -1,0 +1,331 @@
+body {
+  background-color: aqua;
+}
+
+section {
+  width: 180px;
+  margin-top: 60px;
+  margin-left: 20%;
+}
+
+.head {
+  width: 120px;
+  height: 120px;
+  background-color: yellow;
+  border-radius: 40px;
+  position: relative;
+  margin: auto;
+  box-shadow: 3px 3px rgb(225, 225, 0);
+
+}
+
+.eye-right {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  transition: transform 1s ease;
+
+}
+
+.eye-left {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  transition: transform 1s ease;
+
+}
+
+section:hover .eye-right {
+  transform: rotateX(85deg);
+}
+
+section:hover .eye-left {
+  transform: rotateX(85deg);
+}
+
+.chin {
+  width: 80%;
+  height: 50px;
+  background-color: olive;
+  border-radius: 50%;
+  position: relative;
+  top: 70px;
+  left: 10%;
+
+}
+
+.mouth {
+  width: 60%;
+  height: 5px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 30%;
+  position: absolute;
+  bottom: 15px;
+  left: 19%;
+  transition: transform 2s ease;
+
+}
+
+section:hover .mouth {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  background-color: beige;
+  transform: scaleY(2.5);
+
+}
+
+.nose {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(225, 225, 0);
+  border-radius: 50%;
+  position: absolute;
+  top: 55px;
+  left: 47px;
+
+}
+
+.ear-right {
+  width: 15px;
+  height: 35px;
+  background-color: rgb(225, 225, 0);
+  border-radius: 30%;
+  position: absolute;
+  top: 55px;
+  left: -10px;
+
+}
+
+.ear-left {
+  width: 15px;
+  height: 35px;
+  background-color: rgb(225, 225, 0);
+  border-radius: 30%;
+  position: absolute;
+  top: 55px;
+  right: -10px;
+
+}
+
+.hair {
+  width: 60%;
+  height: 50px;
+  border-top: 5px solid black;
+  border-radius: 30%;
+  position: absolute;
+  top: -6px;
+  left: 20%;
+
+}
+
+.torso {
+  width: 90px;
+  height: 100px;
+  background-color: beige;
+  position: relative;
+  margin: auto;
+
+}
+
+.neck {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgb(225, 225, 0);
+  margin: auto;
+
+}
+
+.belly {
+  width: 120px;
+  height: 60%;
+  position: absolute;
+  left: -15px;
+  bottom: 0px;
+  border-radius: 40%;
+  border-top: 1px solid darkgray;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  background-color: beige;
+  box-shadow: 0px 0px 2px lightgray;
+}
+
+.shirt-right {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: -4px;
+  left: 8px;
+  transform: rotate(55deg);
+  border-bottom: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+
+}
+
+.shirt-left {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: -4px;
+  right: 8px;
+  transform: rotate(-55deg);
+  border-bottom: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+
+}
+
+.arm-left {
+  width: 30px;
+  height: 90px;
+  position: absolute;
+  top: 0px;
+  right: -30px;
+  background-color: yellow;
+  border-top-right-radius: 15px;
+
+}
+
+.arm-left .sleeve {
+  width: 30px;
+  height: 30px;
+  background-color: beige;
+  border-top-right-radius: 15px;
+
+}
+
+.arm-left .thumb {
+  width: 14px;
+  background-color: yellow;
+  height: 7px;
+  border-radius: 40%;
+  position: absolute;
+  bottom: 10px;
+  left: -7px;
+
+}
+
+.mid-finger {
+  width: 34%;
+  height: 7px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  position: absolute;
+  bottom: 0px;
+  left: 33%;
+
+}
+
+.arm-right {
+  width: 30px;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  background-color: yellow;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+}
+
+.elbow {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  position: relative;
+  left: 30px;
+  top: 10px;
+  transform: rotate(-90deg);
+}
+
+.arm-right .thumb {
+  width: 14px;
+  background-color: yellow;
+  height: 7px;
+  border-radius: 40%;
+  position: relative;
+  bottom: 10px;
+  right: -12px;
+
+}
+
+.arm-right .sleeve {
+  width: 30px;
+  height: 30px;
+  background-color: beige;
+  border-top-left-radius: 15px;
+
+}
+
+.pants {
+  width: 120px;
+  height: 90px;
+  position: relative;
+  margin: auto;
+
+}
+
+.leg-right {
+  width: 40%;
+  height: 55%;
+  position: absolute;
+  left: 0px;
+  bottom: 20%;
+  background-color: blue;
+
+}
+
+.leg-left {
+  width: 40%;
+  height: 55%;
+  position: absolute;
+  right: 0px;
+  bottom: 20%;
+  background-color: blue;
+
+}
+
+.waist {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  border-radius: 40%;
+  background-color: blue;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom: 3px solid rgb(53, 64, 96);
+
+}
+
+.shoe-right {
+  width: 60%;
+  height: 20%;
+  position: absolute;
+  left: -15%;
+  bottom: 0%;
+  background-color: rgb(57, 57, 57);
+  border-top-left-radius: 30px;
+
+}
+
+.shoe-left {
+  width: 60%;
+  height: 20%;
+  position: absolute;
+  right: -15%;
+  bottom: 0%;
+  background-color: rgb(57, 57, 57);
+  border-top-right-radius: 30px;
+
+}
